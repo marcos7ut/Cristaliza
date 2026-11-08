@@ -15,14 +15,16 @@ O que mudou em relação ao arquivo original:
 
 | Pasta | O que é | Design |
 |---|---|---|
-| `barbearia/` | **Augusta & Co.**, barbearia fictícia na Rua Augusta, em SP. Serviços, equipe, galeria, avaliações e agendamento que abre o WhatsApp com tudo preenchido | Design system *Blade & Co.* (barbershop-landing-51), sem mudanças |
 | `moda/` | **NOVE**, loja de roupas fictícia em SP no modelo dos lojistas do Giro. Vitrine com sacola que vira pedido no WhatsApp, lista VIP e a seção "Loja que se mede", que leva ao painel Giro | Design system *SABLE* (sable-fashion-39), sem mudanças |
 | `saboaria/` | **Saboaria Lavanda**, loja artesanal com catálogo, quiz de aroma, monte seu kit e pedido pelo WhatsApp | O projeto Aromas, com outra marca |
 | `modelo/` | Modelo simples de loja, editado pelo `catalogo.js` | — |
 
-O **Giro** (https://marcos7ut.github.io/Giro/) aparece em Projetos como exemplo de dashboard.
+Em Projetos também aparecem dois projetos reais, com link externo:
 
-Nos dois design systems, o CSS, as fontes, as fotos e as animações ficaram iguais aos originais. Mudaram só três coisas:
+- o **Itarobá** (https://marcos7ut.github.io/Itaroba/), app com acesso restrito;
+- o **Giro** (https://marcos7ut.github.io/Giro/), exemplo de dashboard.
+
+No design system da loja de roupas, o CSS, as fontes, as fotos e as animações ficaram iguais aos originais. Mudaram só três coisas:
 
 - os textos;
 - a moeda e os preços;
@@ -34,9 +36,6 @@ Os pedidos de teste de todos os exemplos chegam no WhatsApp do Marcos. Todos os 
 
 ### Onde mudar
 
-- **Barbearia:**
-  - textos: `exemplos/barbearia/index.html`;
-  - número que recebe os agendamentos: `exemplos/barbearia/assets/js/agendamento.js`.
 - **Moda:**
   - produtos e preços: lista `PRODUCTS` no fim de `exemplos/moda/index.html`;
   - número de WhatsApp: constante `WHATS`, no mesmo arquivo.

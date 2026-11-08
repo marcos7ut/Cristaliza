@@ -12,7 +12,7 @@ LIMITE_BASE64 = 10 * 1024
 problemas = []
 # Arquivos que seguem um design fechado e ficam exatamente como vieram (não são "corrigidos" pela verificação):
 # o site original da Cristaliza (logo e bibliotecas embutidos) e os design systems usados nos exemplos.
-PRESERVADOS = ('index.html', 'exemplos/moda/assets/', 'exemplos/barbearia/assets/')
+PRESERVADOS = ('index.html', 'exemplos/moda/assets/')
 def preservado(rel): return any(str(rel) == x or str(rel).startswith(x) for x in PRESERVADOS)
 
 def alvo_existe(base: Path, ref: str) -> bool:
