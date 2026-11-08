@@ -1,0 +1,15 @@
+name: Verificar site
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Links, pesos e WhatsApp
+        run: python3 ferramentas/verificar.py
+      - name: Sintaxe dos scripts
+        run: for f in $(git ls-files '*.js'); do node --check "$f" || exit 1; done

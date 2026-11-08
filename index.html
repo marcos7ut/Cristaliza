@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cristaliza | Monte o seu site ao vivo</title>
+<meta name="description" content="Sites, lojas com pedido no WhatsApp, landing pages e automação. Monte um rascunho do seu site agora, ao vivo, e fale direto com quem vai construir.">
+<meta name="theme-color" content="#f3efe6">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Cristaliza">
+<meta property="og:title" content="Cristaliza | Monte o seu site ao vivo">
+<meta property="og:description" content="Digite o nome do seu negócio e veja o site nascer na tela. Depois é só chamar no WhatsApp.">
+<meta property="og:image" content="https://marcos7ut.github.io/cristaliza/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="assets/icone.svg">
+<link rel="apple-touch-icon" href="assets/icone-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Instrument+Serif:ital@0;1&display=swap">
+<link rel="stylesheet" href="assets/estilo.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Cristaliza","description":"Desenvolvimento de sites, lojas com pedido pelo WhatsApp, landing pages e automação de atendimento.","areaServed":"BR","telephone":"+55 11 95481-0927","founder":[{"@type":"Person","name":"Marcos"},{"@type":"Person","name":"Fernando"}],"makesOffer":[{"@type":"Offer","name":"Landing page","price":"1200","priceCurrency":"BRL"},{"@type":"Offer","name":"Site profissional","price":"2400","priceCurrency":"BRL"},{"@type":"Offer","name":"Automação de WhatsApp","price":"1800","priceCurrency":"BRL"}]}
+</script>
+<script src="assets/app.js" defer></script>
+</head>
+<body>
+<a class="pular" href="#monte">Pular para o conteúdo</a>
+
+<header class="topo">
+  <a class="marca" href="#monte" aria-label="Cristaliza, início">
+    <svg class="gema" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3 35 14 29 36H11L5 14Z" fill="var(--tinta)"/><path d="M20 3 29 36M20 3 11 36M5 14h30" stroke="var(--papel)" stroke-width="1.6" fill="none"/></svg>
+    <span>Cristaliza</span>
+  </a>
+  <nav aria-label="Seções">
+    <a href="#monte">Monte ao vivo</a>
+    <a href="#rua">Rua das lojas</a>
+    <a href="#precos">Preços</a>
+    <a href="#nos">Quem faz</a>
+  </nav>
+  <a class="botao botao-pequeno" href="#falar" data-zap="marcos" data-zap-texto="Olá, Marcos! Vim pelo site da Cristaliza e quero conversar sobre um projeto.">Chamar no WhatsApp</a>
+</header>
+
+<main>
+<!-- 1. O simulador é a primeira dobra: nada de "hero" genérico -->
+<section class="monte" id="monte" aria-labelledby="monte-titulo">
+  <div class="monte-texto">
+    <p class="selo">Estúdio de sites · São Paulo</p>
+    <h1 id="monte-titulo">Seu site começa <em>aqui,</em> agora.</h1>
+    <p class="lead">Escreva o nome do seu negócio e escolha três coisas. O rascunho aparece no celular ao lado, do jeito que o seu cliente vai ver.</p>
+
+    <form class="config" id="config" autocomplete="off">
+      <label class="campo">
+        <span>1. Nome do negócio</span>
+        <input id="c-nome" name="nome" maxlength="32" placeholder="Ex.: Doces da Cida" required>
+      </label>
+
+      <fieldset>
+        <legend>2. O que você faz?</legend>
+        <div class="fichas" data-grupo="ramo"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>3. Qual é a sua cara?</legend>
+        <div class="fichas" data-grupo="estilo"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>4. O site precisa…</legend>
+        <div class="fichas" data-grupo="objetivo"></div>
+      </fieldset>
+    </form>
+  </div>
+
+  <div class="palco" aria-live="polite">
+    <div class="celular" id="celular" aria-label="Prévia do seu site">
+      <div class="celular-tela" id="previa"></div>
+    </div>
+    <div class="veredito" id="veredito">
+      <p class="veredito-plano" id="v-plano"></p>
+      <p class="veredito-preco" id="v-preco"></p>
+      <div class="veredito-acoes" id="falar">
+        <a class="botao" data-quero="marcos" href="#">Quero este · falar com Marcos</a>
+        <a class="botao botao-claro" data-quero="fernando" href="#">Falar com Fernando</a>
+      </div>
+      <button class="link" type="button" id="copiar-link">Copiar o link deste rascunho</button>
+      <p class="aviso" id="aviso-copia" role="status"></p>
+    </div>
+  </div>
+  <button class="ver-previa" id="ver-previa" type="button" hidden>Ver como ficou ↓</button>
+</section>
+
+<!-- 2. Portfólio como uma rua: cada fachada é um site de verdade -->
+<section class="rua" id="rua" aria-labelledby="rua-titulo">
+  <div class="faixa-titulo">
+    <h2 id="rua-titulo">Rua das lojas</h2>
+    <p>Cada fachada é um site que fizemos. Entre, mexa, faça um pedido de teste.<br>A última vaga está livre.</p>
+  </div>
+  <div class="rua-trilho" id="rua-trilho" tabindex="0" aria-label="Lojas, role para o lado"></div>
+  <div class="calcada" aria-hidden="true"></div>
+</section>
+
+<!-- 3. Preços sem rodeio -->
+<section class="precos" id="precos" aria-labelledby="precos-titulo">
+  <h2 id="precos-titulo">Três jeitos de começar.<br><em>Preço na mesa.</em></h2>
+  <div class="planos">
+    <article class="plano">
+      <p class="plano-num">01</p>
+      <h3>Landing page</h3>
+      <p>Uma página para uma oferta, com um caminho claro até o seu WhatsApp.</p>
+      <ul><li>Feita para celular e computador</li><li>Botões de contato em todo lugar</li><li>Pronta para anúncio e Instagram</li></ul>
+      <p class="valor"><small>a partir de</small> R$ 1.200</p>
+      <a class="botao botao-claro" href="#" data-zap="marcos" data-zap-texto="Olá, Marcos! Quero saber mais sobre a landing page (a partir de R$ 1.200).">Quero esta</a>
+    </article>
+    <article class="plano plano-destaque">
+      <p class="plano-num">02</p>
+      <h3>Site ou loja</h3>
+      <p>Até cinco páginas, ou uma vitrine com sacola que manda o pedido pronto pelo WhatsApp.</p>
+      <ul><li>Catálogo fácil de atualizar</li><li>Pedido montado no WhatsApp</li><li>Base para aparecer no Google</li></ul>
+      <p class="valor"><small>a partir de</small> R$ 2.400</p>
+      <a class="botao" href="#" data-zap="marcos" data-zap-texto="Olá, Marcos! Quero saber mais sobre o site ou loja (a partir de R$ 2.400).">Quero este</a>
+    </article>
+    <article class="plano">
+      <p class="plano-num">03</p>
+      <h3>Automação de WhatsApp</h3>
+      <p>Respostas e etapas repetidas organizadas, sem perder o atendimento humano.</p>
+      <ul><li>Mapeamento do seu atendimento</li><li>Fluxo inicial automatizado</li><li>Passa a conversa para uma pessoa</li></ul>
+      <p class="valor"><small>implantação</small> R$ 1.800</p>
+      <a class="botao botao-claro" href="#" data-zap="fernando" data-zap-texto="Olá, Fernando! Quero saber mais sobre a automação de WhatsApp (implantação R$ 1.800).">Quero esta</a>
+    </article>
+  </div>
+  <p class="nota">Valores de referência, confirmados no orçamento. Domínio, hospedagem, ferramentas e consumo de APIs são à parte quando existirem, e a proposta mostra tudo antes de começar.</p>
+
+  <ol class="passos" aria-label="Como funciona">
+    <li><b>Conversa</b><span>Entendemos o negócio, o público e o que o site precisa fazer.</span></li>
+    <li><b>Construção</b><span>Você acompanha e revisa um link de prévia, igual ao rascunho daqui de cima.</span></li>
+    <li><b>No ar</b><span>Publicamos e mostramos como atualizar fotos, preços e textos.</span></li>
+  </ol>
+</section>
+
+<!-- 4. Gente de verdade -->
+<section class="nos" id="nos" aria-labelledby="nos-titulo">
+  <h2 id="nos-titulo">Transformamos pedras no caminho<br><em>em estrutura para crescer.</em></h2>
+  <p class="nos-texto">A Cristaliza são dois sócios. Você fala direto com quem desenha e programa, sem atendente no meio e sem modelo pronto copiado de outro cliente.</p>
+  <div class="socios">
+    <a class="socio" href="#" data-zap="marcos" data-zap-texto="Olá, Marcos! Vim pelo site da Cristaliza.">
+      <span class="socio-ini" aria-hidden="true">M</span>
+      <span><b>Marcos</b><small>Sites, lojas e apps</small><small>(11) 95481-0927</small></span>
+      <span class="socio-seta" aria-hidden="true">→</span>
+    </a>
+    <a class="socio" href="#" data-zap="fernando" data-zap-texto="Olá, Fernando! Vim pelo site da Cristaliza.">
+      <span class="socio-ini" aria-hidden="true">F</span>
+      <span><b>Fernando</b><small>Atendimento e automação</small><small>(11) 99173-9104</small></span>
+      <span class="socio-seta" aria-hidden="true">→</span>
+    </a>
+  </div>
+</section>
+
+<section class="duvidas" aria-labelledby="duvidas-titulo">
+  <h2 id="duvidas-titulo">Antes de chamar</h2>
+  <div>
+    <details><summary>Site ou landing page: qual escolher?</summary><p>O site apresenta a empresa em várias páginas. A landing page concentra uma oferta e uma ação, como pedir orçamento. O simulador lá em cima já sugere um caminho, e a gente confirma na conversa.</p></details>
+    <details><summary>O rascunho do simulador é o meu site?</summary><p>É o ponto de partida. Ele mostra a ideia e o tom; o site final é feito sob medida, com suas fotos, seus textos e o seu jeito de vender.</p></details>
+    <details><summary>Consigo atualizar preços e fotos sozinho?</summary><p>Sim. O catálogo fica num arquivo simples e mostramos o passo a passo. Se preferir, a gente atualiza para você.</p></details>
+    <details><summary>A automação substitui uma pessoa?</summary><p>Não precisa substituir. Ela organiza as etapas repetidas e passa a conversa para alguém da sua equipe na hora certa.</p></details>
+    <details><summary>Como ficam prazo, suporte e custos mensais?</summary><p>A proposta descreve escopo, prazo, suporte e qualquer custo de ferramenta. Nada é cobrado sem estar escrito antes.</p></details>
+  </div>
+</section>
+</main>
+
+<footer class="rodape">
+  <p class="rodape-lema">Construir. Medir. Impulsionar. Crescer.</p>
+  <p>© <span id="ano">2026</span> Cristaliza · Este site não usa cookies nem guarda seus dados. O rascunho fica só no seu aparelho.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="robots" content="noindex">
+<title>Loja</title>
+<link rel="stylesheet" href="loja.css">
+<script src="catalogo.js" defer></script>
+<script src="loja.js" defer></script>
+</head>
+<body>
+<div class="faixa-demo" id="faixa-demo" hidden>Site de demonstração feito pela Cristaliza. <a href="../../">Ver outros projetos</a></div>
+<header class="topo">
+  <a class="marca" href="#" id="marca"></a>
+  <button class="sacola-botao" id="abrir-sacola" type="button">Sacola <span id="conta">0</span></button>
+</header>
+<main>
+  <section class="abertura">
+    <h1 id="titulo"></h1>
+    <p id="frase"></p>
+  </section>
+  <nav class="filtros" id="filtros" aria-label="Categorias"></nav>
+  <section class="grade" id="grade" aria-live="polite"></section>
+</main>
+<dialog class="sacola" id="sacola" aria-labelledby="sacola-titulo">
+  <div class="sacola-topo"><h2 id="sacola-titulo">Sua sacola</h2><button type="button" id="fechar" aria-label="Fechar">×</button></div>
+  <ul id="itens"></ul>
+  <p class="total" id="total"></p>
+  <label>Seu nome <input id="cliente" maxlength="80" autocomplete="name"></label>
+  <a class="enviar" id="enviar" href="#" target="_blank" rel="noopener">Enviar pedido no WhatsApp</a>
+  <p class="nota">Os valores, a entrega e o pagamento são confirmados na conversa.</p>
+</dialog>
+<footer class="rodape"><span id="rodape-nome"></span> · <a id="rodape-zap" target="_blank" rel="noopener">WhatsApp</a><span id="rodape-insta"></span></footer>
+</body>
+</html>
