@@ -9,6 +9,7 @@ O design foi criado por nós dois para o nosso negócio e **fica exatamente como
 O que mudou em relação ao arquivo original:
 
 - O WhatsApp oficial foi ligado no campo que o próprio site já previa: `window.CRISTALIZA_CONTACT={whatsapp:"5511954810927"}`. Com isso, o botão flutuante e o "Enviar à Cristaliza" do formulário abrem a conversa.
+- Instagram (`cristalizadigital`) e Facebook oficiais ligados no mesmo campo (`instagram` e `facebook`). Os botões redondos da seção de contato agora abrem as páginas.
 - Entrou a seção **Projetos** (`#projetos`), montada com os mesmos cartões da seção de serviços (`service-card`, `solution-preview`, `tile`, `button outline`). Ela também ganhou um link no menu.
 
 ## Projetos de exemplo (`exemplos/`)
