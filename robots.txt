@@ -1,0 +1,5 @@
+# As lojas de demonstração (marcas fictícias) ficam fora do Google pela tag noindex de cada página.
+User-agent: *
+Allow: /
+
+Sitemap: https://marcos7ut.github.io/Cristaliza/sitemap.xml

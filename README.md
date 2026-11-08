@@ -12,6 +12,28 @@ O que mudou em relação ao arquivo original:
 - Instagram (`cristalizadigital`) e Facebook oficiais ligados no mesmo campo (`instagram` e `facebook`). Os botões redondos da seção de contato agora abrem as páginas.
 - Entrou a seção **Projetos** (`#projetos`), montada com os mesmos cartões da seção de serviços (`service-card`, `solution-preview`, `tile`, `button outline`). Ela também ganhou um link no menu.
 
+### Organização dos arquivos (o visual é o mesmo de antes)
+
+O `index.html` era um arquivo único de 242 KB. Agora tem 17 KB, e o resto fica em arquivos que o navegador guarda em cache. Comparamos a página antes e depois, pixel a pixel, no computador e no celular, e ficou idêntica.
+
+| Arquivo | O que é |
+|---|---|
+| `assets/css/cristaliza.css` | Todos os estilos do site |
+| `assets/js/gsap.min.js`, `ScrollTrigger.min.js` | Biblioteca das animações (GSAP 3.12.7) |
+| `assets/js/cristaliza.js` | Menu, simulador, briefing, WhatsApp e redes |
+| `assets/js/fundo.js` | Fundo animado (WebGL) |
+| `assets/js/demonstracao.js` | Janelas de "Ver demonstração" |
+| `assets/img/logo-cristaliza*.webp` | As duas versões da logo |
+| `assets/img/og-cristaliza.jpg` | Imagem que aparece quando o link é compartilhado (WhatsApp, Instagram) |
+| `assets/img/icone-*.png`, `manifest.webmanifest` | Ícone ao salvar o site na tela inicial |
+| `privacidade.html` | Política de privacidade (LGPD), aberta pelo "Privacidade" do rodapé |
+| `404.html` | Página de "não encontrado" no visual do site |
+| `sitemap.xml`, `robots.txt` | Para o Google |
+
+A configuração de contato (WhatsApp, Instagram e Facebook) continua no próprio `index.html`, em `window.CRISTALIZA_CONTACT`.
+
+**Se trocar para um domínio próprio:** atualize o endereço `https://marcos7ut.github.io/Cristaliza/` no `<head>` do `index.html` (canonical, og:url, og:image e dados para o Google), no `sitemap.xml` e no `robots.txt`. No `404.html`, troque `/Cristaliza/` por `/`.
+
 ## Projetos de exemplo (`exemplos/`)
 
 | Pasta | O que é | Design |
