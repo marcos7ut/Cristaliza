@@ -19,10 +19,10 @@ O que mudou em relação ao arquivo original:
 | `saboaria/` | **Saboaria Lavanda**, loja artesanal com catálogo, quiz de aroma, monte seu kit e pedido pelo WhatsApp | O projeto Aromas, com outra marca |
 | `modelo/` | Modelo simples de loja, editado pelo `catalogo.js` | — |
 
-Em Projetos também aparecem dois projetos reais, com link externo:
+Em Projetos também aparecem dois projetos reais:
 
-- o **Itarobá** (https://marcos7ut.github.io/Itaroba/), app com acesso restrito;
-- o **Giro** (https://marcos7ut.github.io/Giro/), exemplo de dashboard.
+- o **Itarobá**, app com acesso restrito. Aparece **só como demonstração**: o cartão não tem link nem botão;
+- o **Giro** (https://marcos7ut.github.io/Giro/), exemplo de dashboard, com link.
 
 No design system da loja de roupas, o CSS, as fontes, as fotos e as animações ficaram iguais aos originais. Mudaram só três coisas:
 
