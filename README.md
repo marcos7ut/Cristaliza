@@ -9,6 +9,7 @@ O design foi criado por nós dois para o nosso negócio e **fica exatamente como
 O que mudou em relação ao arquivo original:
 
 - O WhatsApp oficial foi ligado no campo que o próprio site já previa: `window.CRISTALIZA_CONTACT={whatsapp:"5511954810927"}`. Com isso, o botão flutuante e o "Enviar à Cristaliza" do formulário abrem a conversa.
+- Instagram (`cristalizadigital`) e Facebook oficiais ligados no mesmo campo (`instagram` e `facebook`). Os botões redondos da seção de contato agora abrem as páginas.
 - Entrou a seção **Projetos** (`#projetos`), montada com os mesmos cartões da seção de serviços (`service-card`, `solution-preview`, `tile`, `button outline`). Ela também ganhou um link no menu.
 
 ## Projetos de exemplo (`exemplos/`)
@@ -19,10 +20,10 @@ O que mudou em relação ao arquivo original:
 | `saboaria/` | **Saboaria Lavanda**, loja artesanal com catálogo, quiz de aroma, monte seu kit e pedido pelo WhatsApp | O projeto Aromas, com outra marca |
 | `modelo/` | Modelo simples de loja, editado pelo `catalogo.js` | — |
 
-Em Projetos também aparecem dois projetos reais, com link externo:
+Em Projetos também aparecem dois projetos reais:
 
-- o **Itarobá** (https://marcos7ut.github.io/Itaroba/), app com acesso restrito;
-- o **Giro** (https://marcos7ut.github.io/Giro/), exemplo de dashboard.
+- o **Itarobá**, app com acesso restrito. Aparece **só como demonstração**: o cartão não tem link nem botão;
+- o **Giro** (https://marcos7ut.github.io/Giro/), exemplo de dashboard, com link.
 
 No design system da loja de roupas, o CSS, as fontes, as fotos e as animações ficaram iguais aos originais. Mudaram só três coisas:
 
