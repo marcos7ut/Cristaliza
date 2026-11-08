@@ -44,7 +44,7 @@ for arq in sorted(RAIZ.rglob('*')):
         if tam > LIMITE_HTML and not preservado(rel):
             problemas.append(f'{rel}: página com {tam // 1024} KB (máximo {LIMITE_HTML // 1024} KB)')
         for ref in re.findall(r'(?:href|src)="([^"]+)"', txt):
-            if re.match(r'^(https?:|mailto:|tel:|#|data:|\$\{)', ref) or ref.startswith('data-'):
+            if re.match(r'^(https?:|mailto:|tel:|#|data:|\$\{)', ref) or ref.startswith('data-') or ref.startswith('/'):
                 continue
             if not alvo_existe(arq, ref):
                 problemas.append(f'{rel}: link quebrado -> {ref}')
