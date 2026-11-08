@@ -1,0 +1,39 @@
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo,#f7f3ee);color:var(--tinta,#1f1b24);font:16px/1.5 system-ui,-apple-system,'Segoe UI',sans-serif}
+a{color:inherit}
+img{display:block;max-width:100%}
+.faixa-demo{padding:8px 16px;text-align:center;font-size:13px;background:var(--tinta);color:var(--fundo)}
+.topo{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:var(--fundo);border-bottom:1px solid #0001}
+.marca{font-weight:800;font-size:20px;text-decoration:none;letter-spacing:-.02em}
+.sacola-botao{min-height:42px;padding:0 16px;border:0;border-radius:999px;background:var(--tinta);color:var(--fundo);font:600 15px system-ui;cursor:pointer}
+.sacola-botao span{display:inline-grid;place-items:center;min-width:22px;height:22px;margin-left:6px;border-radius:11px;background:var(--destaque);color:#fff;font-size:12px}
+.abertura{max-width:1100px;margin:0 auto;padding:48px 16px 24px}
+.abertura h1{margin:0;font-size:clamp(36px,7vw,72px);line-height:1;letter-spacing:-.03em}
+.abertura p{max-width:46ch;font-size:18px;opacity:.8}
+.filtros{display:flex;gap:8px;overflow-x:auto;max-width:1100px;margin:0 auto;padding:0 16px 16px}
+.filtros button{flex:none;min-height:40px;padding:0 16px;border:1.5px solid var(--tinta);border-radius:999px;background:none;color:inherit;font:500 15px system-ui;cursor:pointer}
+.filtros button[aria-pressed=true]{background:var(--tinta);color:var(--fundo)}
+.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr));gap:16px;max-width:1100px;margin:0 auto;padding:0 16px 64px}
+.card{display:flex;flex-direction:column;background:#fff8;border-radius:18px;overflow:hidden;border:1px solid #0001}
+.card img{aspect-ratio:4/5;object-fit:cover;width:100%;background:var(--suave)}
+.card div{padding:12px 14px 14px;display:grid;gap:4px;flex:1}
+.card h3{margin:0;font-size:17px}
+.card p{margin:0;font-size:14px;opacity:.75}
+.card .preco{font-weight:700;margin-top:auto}
+.card button{margin:0 14px 14px;min-height:44px;border:0;border-radius:12px;background:var(--destaque);color:#fff;font:600 15px system-ui;cursor:pointer}
+.sacola{width:min(480px,100vw);max-height:90vh;border:0;border-radius:20px;padding:20px;background:var(--fundo);color:var(--tinta)}
+.sacola::backdrop{background:#0006}
+.sacola-topo{display:flex;justify-content:space-between;align-items:center}
+.sacola-topo h2{margin:0}
+.sacola-topo button{border:0;background:none;font-size:28px;cursor:pointer;color:inherit}
+.sacola ul{list-style:none;padding:0;margin:12px 0;display:grid;gap:10px}
+.sacola li{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.sacola li div{display:flex;align-items:center;gap:6px}
+.sacola li button{width:32px;height:32px;border:1.5px solid var(--tinta);border-radius:50%;background:none;color:inherit;cursor:pointer}
+.sacola label{display:grid;gap:4px;font-size:14px;margin:8px 0}
+.sacola input{min-height:44px;padding:0 12px;border:1.5px solid #0003;border-radius:10px;font:16px system-ui;background:#fff}
+.total{font-weight:700}
+.enviar{display:flex;justify-content:center;align-items:center;min-height:50px;border-radius:14px;background:#1f9d55;color:#fff;font-weight:700;text-decoration:none}
+.enviar[aria-disabled=true]{opacity:.5;pointer-events:none}
+.nota{font-size:13px;opacity:.7}
+.rodape{padding:24px 16px;text-align:center;font-size:14px;border-top:1px solid #0001}

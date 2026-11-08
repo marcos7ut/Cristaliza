@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Saboaria Lavanda">
+  <rect width="120" height="120" rx="28" fill="#f4ecf8"/>
+  <circle cx="60" cy="52" r="34" fill="#e7d8f0"/>
+  <g fill="none" stroke="#5c7a5a" stroke-width="2.6" stroke-linecap="round">
+    <path d="M60 86 C60 66 60 46 60 26"/>
+    <path d="M60 70 C52 62 46 56 42 46"/>
+    <path d="M60 70 C68 62 74 56 78 46"/>
+  </g>
+  <g fill="#80509a">
+    <ellipse cx="60" cy="24" rx="4" ry="6"/><ellipse cx="55" cy="32" rx="3.6" ry="5.4" transform="rotate(-25 55 32)"/><ellipse cx="65" cy="32" rx="3.6" ry="5.4" transform="rotate(25 65 32)"/>
+    <ellipse cx="55" cy="42" rx="3.6" ry="5.4" transform="rotate(-25 55 42)"/><ellipse cx="65" cy="42" rx="3.6" ry="5.4" transform="rotate(25 65 42)"/>
+    <ellipse cx="41" cy="43" rx="3.2" ry="4.8" transform="rotate(-35 41 43)"/><ellipse cx="45" cy="51" rx="3" ry="4.4" transform="rotate(-35 45 51)"/>
+    <ellipse cx="79" cy="43" rx="3.2" ry="4.8" transform="rotate(35 79 43)"/><ellipse cx="75" cy="51" rx="3" ry="4.4" transform="rotate(35 75 51)"/>
+  </g>
+  <text x="60" y="104" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-style="italic" font-size="19" fill="#4b2f5c">Lavanda</text>
+</svg>
